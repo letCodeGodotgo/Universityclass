@@ -128,6 +128,15 @@ public class LinkedList<T> {
 		}
 	}
 	
+	public Object[] toArray() {
+		Object[] array = new Object[size];
+		int idx = 0;
+		for (Node<T> x = head; x !=null; x = x.next) {
+			array[idx++] = (T) x.data;
+		}
+		return array;
+	}
+	
 	public void dump() {
 		Node<T> ptr = head;
 		
