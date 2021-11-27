@@ -112,7 +112,7 @@ public class LinkedList<T> {
 	}
 	
 	public void sortList() {
-		HeapSort(elements, currt.data);
+		HeapSort.sort(elements, currt.data);
 //		Node currt = null, ptr = null;
 //		Object temp;
 //		
